@@ -5,8 +5,9 @@ const App = () => {
   return (
     <div className="video-main-div">
       <video
-        autoPlay={true}
-        loop={true}
+        autoPlay
+        muted
+        loop
         className="video1"
         disablePictureInPicture={true}
         src={video_1}
