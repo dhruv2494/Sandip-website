@@ -1,30 +1,121 @@
-.video-main-div {
-  position: relative;
-}
+ .header-container {
+   width: 100%;
+   height: 95px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-.video1 {
-  width: 100%;
-  height: 100dvh;
-  object-fit: cover;
-}
+ .video-1 {
+   width: 100%;
+   height: 100dvh;
+   object-fit: cover;
+ }
 
-.text-div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+ .header-navbar {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   height: 94px;
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 15px;
+   justify-content: space-between;
+ }
 
-}
+ .header-navbar-subitem {
+   display: flex;
+   gap: 25px;
+ }
 
-.text1 {
-  background-color: rgba(255, 255, 0, 0.7);
-  width: 100%;
-  text-align: center;
-  padding: 60px 0px;
-  font-size: 50px;
-  color: black;
-}
+ .navbar-header-item {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   position: relative;
+ }
+
+ .navbar-header-item a {
+   font: 700 14px "Lato", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: .1em;
+   text-decoration: none;
+   transition: 0.33s all ease-out;
+   color: #363d41;
+   display: flex;
+   align-items: center;
+ }
+
+ .navbar-header-item:hover a {
+   color: #d59645;
+   transition: all 0.5s ease-out;
+
+ }
+
+ .navbar-submenu-toggle-item:after {
+   content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgaWQ9ImRvd24tYXJyb3ciPjxwYXRoIGQ9Ik0yMi43ODIgMTMuOCAxNyAxOS41ODIgMTEuMjE4IDEzLjhhMSAxIDAgMCAwLTEuNDE0IDEuNDE0TDE2LjI5IDIxLjdhLjk5Mi45OTIgMCAwIDAgLjcxLjI5Mi45OTcuOTk3IDAgMCAwIC43MS0uMjkybDYuNDg2LTYuNDg2YTEgMSAwIDAgMC0xLjQxNC0xLjQxNHoiPjwvcGF0aD48L3N2Zz4=");
+   transition: 0.33s all ease-out;
+
+ }
+
+ .navbar-header-item:hover .navbar-submenu-toggle-item:after {
+   filter: invert(74%) sepia(46%) saturate(598%) hue-rotate(0deg) brightness(96%) contrast(97%);
+   transform: rotate(180deg);
+ }
+
+ .navbar-dropdown {
+   background-color: white;
+   position: absolute;
+   bottom: -120px;
+   right: 0;
+   transform: translate(0%, -50%);
+   padding: 5px 0px;
+   /* display: flex; */
+   flex-direction: column;
+   gap: 5px;
+   transition: all 0.5s ease;
+   width: 140px;
+   align-items: center;
+   display: none;
+ }
+
+ .navbar-header-item:hover .navbar-dropdown {
+   display: flex;
+ }
+
+ .navbar-dropdown p {
+
+   padding: 0;
+   margin: 0;
+   font: 400 10px "Lato", Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: .1em;
+   text-decoration: none;
+   transition: 0.33s all ease-out;
+   color: #363d41;
+   display: flex;
+   align-items: center;
+
+ }
+
+
+
+ .class-1 {
+   color: green;
+   /* Sets the default color of elements with class class-1 to green */
+ }
+
+ .class-1:hover {
+   color: red;
+   /* Changes the color of elements with class class-1 to red when hovered over */
+ }
+
+ .class-1:not(:hover) {
+   color: green;
+   /* Sets the color back to green when the hover state is removed */
+ }
